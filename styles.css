@@ -1,7 +1,4 @@
 body {
-
-
-{
     font-family: Arial, sans-serif;
     font-size: 16px;
 }
@@ -13,6 +10,12 @@ header {
 nav {
     background-color: #333;
     color: white;
+    display: inline-block; /* Thay đổi thành inline-block */
+    width: 80%; /* Đặt chiều rộng khoảng 80% */
+}
+
+nav img {
+    width: 10%; /* Đặt chiều rộng cho hình ảnh trong nav */
 }
 
 main {
@@ -24,9 +27,10 @@ footer {
     background-color: #f1f1f1;
 }
 
+/* Bình luận lại mã cho phần tử li */
 li {
-    display: inline-block;
-    width: 150px;
+    /* display: inline-block; */
+    /* width: 150px; */
 }
 
 h1 {
@@ -39,4 +43,18 @@ p {
     line-height: 1.6;
 }
 
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 40%); /* Hai cột khoảng 40% */
+}
+
+.grid img {
+    width: 100%; /* Hình ảnh trong lớp grid có chiều rộng 100% */
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap; /* Cho phép các phần tử chuyển xuống hàng */
+    justify-content: space-between; /* Điều chỉnh khoảng cách giữa các phần tử */
+}
 
